@@ -19,6 +19,7 @@
 # production
 /build
 /dist
+/dist/*
 
 package-lock.json*
 package.json*

@@ -1,1 +1,56 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/fonts/montserrrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/fonts/montserrrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/fonts/montserrrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre';
+  src: url('/src/fonts/librebaskerville/LibreBaskerville-Bold.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@theme {
+  --color-primary: #F4EFEA;
+  --color-brown: #473734;
+  --color-button: #653332;
+  --color-light: #F7F3EB;
+  --color-medium: #CAC3BB;
+  --color-creme-dark: #E0D9D1;
+
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-libre: "Libre", sans-serif;
+}
+
+@layer components {
+  .card-category {
+    @apply relative w-62 h-64 overflow-hidden rounded-xl cursor-pointer
+  }
+
+  .category-text {
+    @apply absolute bottom-5 left-0 right-6 flex justify-between items-center text-light ml-6 text-xl font-montserrat font-semibold
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

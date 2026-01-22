@@ -1,70 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mad Brindes</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body>
-    <section>
-        <header>
-            <img src="" alt="">
-            <ul>      
-                <li>Produtos</li>
-                <li>Sobre</li>
-                <li>Segurança</li>
-                <li>Contato</li>
-            </ul>
-            <button>Peça agora</button>
-        </header>
-        <div>
-            <h1>Brindes que representam marcas</h1>
-            <p>Peças corporativas desenvolvidas com atenção absoluta aos detalhes, para marcas que sabem como desejam ser lembradas.</p>
-            <button>Peça agora</button>
-        </div>
-        <div>
-            <h2>Mais do que personalizar produtos, criamos experiências físicas que traduzem o valor da sua marca em cada detalhe.</h2>
-        </div>
-        <div>
-            <div>
-                <h4>O que é a MAD Brindes</h4>
-                <p>A MAD Brindes é especializada no desenvolvimento de brindes corporativos personalizados para empresas que valorizam identidade, consistência e impacto visual.</p>
-                <p>Trabalhamos com fornecedores selecionados e um processo criterioso para garantir que cada peça entregue represente, com fidelidade, o posicionamento da sua marca.</p>
-            </div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <h3>Por que escolher a MAD Brindes</h3>
-            <div>
 
+<body>
+    <section class="flex flex-col items-center bg-primary font-montserrat text-brown">
+        <header class="w-full h-18 fixed bg-primary flex justify-center z-100">
+            <div class="w-2/3 flex justify-between items-center">
+                <img src="imgs/logo-text.png" alt="" class="object-none">
+                <ul class="w-2/5 flex justify-between items-center text-base">
+                    <a href="#sobre">
+                        <li>Empresa</li>
+                    </a>
+                    <a href="#seguranca">
+                        <li>Segurança</li>
+                    </a>
+                    <a href="#produtos">
+                        <li>Produtos</li>
+                    </a>
+                    <a href="#contato">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+                <a href="#contato">
+                    <button
+                        class="w-36 h-10 rounded-full border-1 border-brown border-opacity-100 text-sm cursor-pointer">Peça
+                        agora</button>
+                </a>
+            </div>
+        </header>
+        <div class="w-full flex justify-center h-245 bg-[url(/src/imgs/background-desktop.avif)] bg-cover bg-center">
+            <div class="w-2/3 space-y-6 pt-70">
+                <h1 class="w-3/5 text-5xl font-libre">Brindes que representam marcas</h1>
+                <p class="w-4/9 text-xl">Peças corporativas desenvolvidas com atenção absoluta aos detalhes, para marcas
+                    que sabem como desejam
+                    ser lembradas.</p>
+                <a href="#contato">
+                    <button
+                        class="w-48 h-12 rounded-full bg-button text-primary font-montserrat font-semibold cursor-pointer">Peça
+                        agora</button>
+                </a>
             </div>
         </div>
-        <div>
-            <h4>Coleção Escritório</h4>
-            <p>Equipe sua mesa com brindes corporativos que ajudam na organização e clareza no trabalho.</p>
-            <button>Solicite Catálogo</button>
+        <div
+            class="w-full h-130 flex justify-center items-center bg-[url(/src/imgs/background-light.avif)]  bg-cover bg-center">
+            <h2 class="w-2/3 text-5xl text-center font-libre">Mais do que personalizar produtos, criamos experiências
+                físicas que traduzem o valor da sua marca em
+                cada detalhe.</h2>
         </div>
-        <div>
-            <h4>Mais vendidos</h4>
-            <div>
-                <div>
-                    <p>Copos</p>
+        <div id="sobre" class="bg-brown w-full h-180 flex justify-center items-center">
+            <div class="flex w-2/3 justify-between items-center">
+                <div class="flex flex-col w-1/2 space-y-5">
+                    <h4 class="text-primary text-2xl font-libre">O que é a MAD Brindes</h4>
+                    <div class="text-light text-lg font-montserrat">
+                        <p>A MAD Brindes é especializada no desenvolvimento de brindes corporativos personalizados para
+                            empresas
+                            que valorizam identidade, consistência e impacto visual.</p>
+                        <p>Trabalhamos com fornecedores selecionados e um processo criterioso para garantir que cada
+                            peça
+                            entregue represente, com fidelidade, o posicionamento da sua marca.</p>
+                    </div>
+                </div>
+                <img src="imgs/trofeu.avif" alt="">
+            </div>
+        </div>
+        <div id="seguranca" class="space-y-18 w-full flex flex-col items-center justify-center">
+            <h3 class="font-libre text-4xl pt-30 text-center">Por que escolher a MAD Brindes</h3>
+            <div class="w-2/3 flex justify-between">
+                <div
+                    class="relative flex justify-center w-90 h-80 overflow-hidden border-2 border-white rounded-lg group">
+                    <img src="imgs/card-box.avif" alt="" class="absolute inset-0 w-full h-full object-cover">
+
+                    <div class="absolute space-y-2 bottom-0 left-0 w-full p-6 z-30 text-brown">
+                        <p class="font-bold text-xl font-montserrat font-bold">Comunicação</p>
+                        <p class="text-base opacity-90">Entendimento preciso da sua marca antes de qualquer produção.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="relative flex justify-center w-90 h-80 overflow-hidden border-2 border-white rounded-lg group">
+                    <img src="imgs/card-cartao.avif" alt="" class="absolute inset-0 w-full h-full object-cover">
+
+                    <div class="absolute space-y-2 bottom-0 left-0 w-full p-6 z-30 text-brown">
+                        <p class="font-bold text-xl font-montserrat font-bold">Qualidade</p>
+                        <p class="text-base opacity-90">Seleção rigorosa de materiais, acabamentos e fornecedores.</p>
+                    </div>
+                </div>
+                <div
+                    class="relative flex justify-center w-90 h-80 overflow-hidden border-2 border-white rounded-lg group">
+                    <img src="imgs/card-key.avif" alt="" class="absolute inset-0 w-full h-full object-cover">
+
+                    <div class="absolute space-y-2 bottom-0 left-0 w-full p-6 z-30 text-brown">
+                        <p class="font-bold text-xl font-montserrat font-bold">Segurança</p>
+                        <p class="text-base opacity-90">Mais segurança, menos risco e total controle do processo.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <h3>O brinde ideal para sua marca está a um clique.</h3>
-            <button>Peça agora</button>
-        </div>
-        <div>
-            <div>
-                <h3>Pedido personalizado para sua empresa</h3>
+        <div class="w-2/3 h-110 bg-[url(/src/imgs/escritorio.avif)] rounded-lg bg-[center_bottom_20%] bg-cover mt-60">
+            <div
+                class="w-2/5 h-full p-14 flex flex-col justify-between rounded-lg bg-brown/70 backdrop-blur-md font-libre text-medium">
+                <div class="flex flex-col space-y-8 pt-9">
+                    <h4 class="text-light text-3xl">Coleção Escritório</h4>
+                    <p class="text-lg">Equipe sua mesa com brindes corporativos que ajudam na organização e clareza no
+                        trabalho.</p>
+                </div>
+                <a href="#contato">
+                    <button id="catalogo"
+                        class="w-full h-15 border-2 rounded-lg border-light text-light font-montserrat font-semibold text-xl cursor-pointer">Solicitar
+                        Catálogo</button>
+                </a>
             </div>
-            <div>
+        </div>
+        <div id="produtos" class="w-2/3 pt-30">
+            <h4 class="font-montserrat text-lg font-montserrat font-bold">Mais vendidos</h4>
+            <div class="w-full h-160 grid grid-cols-4 grid-rows-2 pt-8">
+                <div class="card-category" data-categoria="copos">
+                    <img src="imgs/copo-back.avif" alt="">
+                    <div class="category-text">
+                        <p>Copos</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-category" data-categoria="garrafas">
+                    <img src="imgs/garrafa-back.avif" alt="">
+                    <div class="category-text">
+                        <p>Garrafas</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-category" data-categoria="agendas">
+                    <img src="imgs/agenda-back.avif" alt="">
+                    <div class="category-text">
+                        <p>Agendas</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-category" data-categoria="chaveiros">
+                    <img src="imgs/chaveiro-back.avif" alt="">
+                    <div class="category-text">
+                        <p>Chaveiros</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-category" data-categoria="fones">
+                    <img src="imgs/fone-back.avif" alt="">
+                    <div class="category-text">
+                        <p>Fones</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-category" data-categoria="pastas">
+                    <img src="imgs/pasta-back.avif" alt="">
+                    <div class="category-text">
+                        <p>Pastas</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-category" data-categoria="mochilas">
+                    <img src="imgs/mochila-back.avif" alt="">
+                    <div class="category-text">
+                        <p>Mochilas</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-category" data-categoria="em ver todos os itens para personalizar">
+                    <img src="imgs/mais-back.avif" alt="">
+                    <div class="category-text">
+                        <p>Veja mais</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="w-2/3 h-120 rounded-2xl flex flex-col justify-end bg-[url(/src/imgs/background-itens.avif)] bg-cover bg-[center_top_40%] mt-60">
+            <div class="h-3/5 flex flex-col items-center bottom-0">
+                <h3 class="font-libre text-5xl w-2/3 text-center">O brinde ideal para sua marca está a um clique</h3>
+                <a href="#contato">
+                    <button
+                        class="w-42 h-11 rounded-full mt-10 bg-button text-base text-light font-montserrat font-semibold cursor-pointer">Peça
+                        agora</button>
+                </a>
+            </div>
+        </div>
+        <div id="contato" class="w-2/3 h-170 pt-40 mt-60 -mb-60 z-20 flex rounded-b-2xl">
+            <div
+                class="w-1/2 h-full flex items-end bg-[url(/src/imgs/background-itens.avif)] bg-cover bg-center bg-blend-overlay rounded-l-xl bg-black/32">
+                <h3 class="font-libre text-light px-16 pb-22 text-4xl w-11/12">Pedido personalizado para sua empresa
+                </h3>
+            </div>
+            <div class="w-1/2 bg-creme-dark flex flex-col justify-center items-center space-y-10  rounded-r-xl">
+                <h2 class="text-4xl font-libre">Pedido</h2>
+                <form action="" class="flex flex-col w-3/5 space-y-8">
+                    <label for="" class="flex flex-col font-montserrat text-sm">Nome
+                        <input type="text" name="name" required
+                            class="w-full h-9 rounded-lg border-1 border-opacity-100 bg-light p-2">
+                    </label>
+                    <label for="" class="flex flex-col font-montserrat text-sm">Mensagem
+                        <textarea name="message" id="" required
+                            class="w-full h-20 rounded-lg border-1 border-opacity-100 bg-light p-2"></textarea>
+                    </label>
+                    <button
+                        class="bg-button w-full h-10 rounded-lg text-light font-montserrat font-semibold cursor-pointer">Enviar</button>
+                </form>
+            </div>
+        </div>
 
+
+        <footer class="pt-80 flex flex-col items-center bg-brown w-full text-light">
+            <div class="lg:py-8 w-2/3">
+                <div class="md:flex md:justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <a href="/" class="flex items-center">
+                            <img src="imgs/logo.png" class="h-8 me-2" alt="Mad Brindes Logo" />
+                            <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">Mad
+                                Brindes</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Website</h2>
+                            <ul class="text-body font-medium">
+                                <li class="mb-4">
+                                    <a href="/" class="hover:underline">Sobre</a>
+                                </li>
+                                <li>
+                                    <a href="/" class="hover:underline">Produtos</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Redes Sociais</h2>
+                            <ul class="text-body font-medium">
+                                <li class="mb-4">
+                                    <a href="https://github.com/themesberg/flowbite"
+                                        class="hover:underline ">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Whatsapp</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Suporte</h2>
+                            <ul class="text-body font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-default sm:mx-auto lg:my-8" />
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <span class="text-sm text-body sm:text-center">© 2026 <a href="/" class="hover:underline">Mad
+                            Brindes™</a>. All Rights Reserved.
+                    </span>
+                    <span class="text-sm text-body sm:text-center"><a href="https://pedro-kaufmann.netlify.app/"
+                            target="_blank" class="hover:underline">Pedro Henrique</a>. Desenvolvedor do site.
+                    </span>
+                    <div class="flex mt-4 sm:justify-center sm:mt-0">
+                        <a href="#" class="text-body hover:text-heading">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Facebook page</span>
+                        </a>
+                        <a href="#" class="text-body hover:text-heading ms-5">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                            </svg>
+                            <span class="sr-only">Discord community</span>
+                        </a>
+                        <a href="#" class="text-body hover:text-heading ms-5">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
+                            </svg>
+                            <span class="sr-only">Twitter page</span>
+                        </a>
+                        <a href="#" class="text-body hover:text-heading ms-5">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">GitHub account</span>
+                        </a>
+                        <a href="#" class="text-body hover:text-heading ms-5">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2a10 10 0 1 0 10 10A10.009 10.009 0 0 0 12 2Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.093 20.093 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM10 3.707a8.82 8.82 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.755 45.755 0 0 0 10 3.707Zm-6.358 6.555a8.57 8.57 0 0 1 4.73-5.981 53.99 53.99 0 0 1 3.168 4.941 32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.641 31.641 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM12 20.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 15.113 13a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Dribbble account</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </footer>
     </section>
 </body>
+
+<script src="index.js"></script>
+
 </html>

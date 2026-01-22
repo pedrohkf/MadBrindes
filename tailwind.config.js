@@ -1,12 +1,10 @@
 export default {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'primary': '#F4EFEA'
+    })
   },
   plugins: [],
 }
