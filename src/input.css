@@ -43,11 +43,11 @@
 
 @layer components {
   .card-category {
-    @apply relative w-62 h-64 overflow-hidden rounded-xl cursor-pointer
+    @apply relative w-full h-60 md:h-72 lg:h-80 overflow-hidden rounded-xl cursor-pointer transition-all hover:scale-[1.02] bg-brown/10
   }
 
   .category-text {
-    @apply absolute bottom-5 left-0 right-6 flex justify-between items-center text-light ml-6 text-xl font-montserrat font-semibold
+    @apply absolute bottom-8 left-0 right-4 flex justify-between items-center text-light ml-8 text-base md:text-lg font-montserrat font-semibold z-20
   }
 }
 

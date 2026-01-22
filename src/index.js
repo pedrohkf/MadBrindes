@@ -4,6 +4,27 @@ const cards = document.querySelectorAll('.card-category');
 const catalog = document.querySelector('#catalogo');
 const campoMensagem = document.querySelector('textarea[name="message"]');
 
+
+const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const links = document.querySelectorAll('.mobile-link');
+
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-full');
+});
+
+const closeMenu = () => {
+    mobileMenu.classList.add('translate-x-full');
+};
+
+closeBtn.addEventListener('click', closeMenu);
+
+links.forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+
 catalog.addEventListener('click', () => {
     campoMensagem.value = `Olá! Fiquei interessado em itens de escritório. Gostaria de mais informações.`;
 
