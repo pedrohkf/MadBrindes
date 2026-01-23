@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mad Brindes</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="../src/input.css">
 </head>
 
 <body>
-    <section class="flex flex-col items-center bg-primary font-montserrat text-brown">
-        <header class="w-full h-20 fixed bg-primary flex justify-center z-[100] border-b border-brown/5 md:border-none">
+    <section class="flex will-change-transform flex-col items-center bg-primary font-montserrat text-brown">
+        <header class="fixed w-full h-20 bg-primary flex justify-center z-[100] border-b border-brown/5 md:border-none">
             <div class="w-full px-6 md:px-0 md:w-2/3 flex justify-between items-center">
 
                 <div class="flex-shrink-0">
@@ -75,20 +76,18 @@
                 </button>
             </a>
         </div>
-        <div
-            class="w-full flex justify-center min-h-screen md:h-245 bg-[url('imgs/background-desktop.avif')] bg-cover bg-center">
 
-            <div class="w-full px-6 md:px-0 md:w-2/3 space-y-6 pt-32 md:pt-70">
-
+        <div data-speed="0.95"
+            class="w-full flex justify-center min-h-screen md:h-245 bg-[url('imgs/background-desktop.avif')] bg-cover bg-center hero">
+            <div data-speed="1.2"
+                class="w-full px-6 md:px-0 md:w-2/3 space-y-6 pt-32 md:pt-70 hero-text">
                 <h1 class="w-full md:w-3/5 text-4xl md:text-5xl font-libre leading-tight">
                     Brindes que representam marcas
                 </h1>
-
                 <p class="w-full md:w-4/9 text-lg md:text-xl">
                     Peças corporativas desenvolvidas com atenção absoluta aos detalhes, para marcas que sabem como
                     desejam ser lembradas.
                 </p>
-
                 <a href="#contato">
                     <button
                         class="w-48 h-12 rounded-full bg-button text-primary font-montserrat font-semibold cursor-pointer hover:brightness-110 transition">
@@ -97,10 +96,11 @@
                 </a>
             </div>
         </div>
-        <div
+
+        <div data-speed="1.2"
             class="w-full min-h-[300px] md:h-130 py-20 md:py-0 flex justify-center items-center bg-[url(imgs/background-light.avif)] bg-cover bg-center px-6">
 
-            <h2 class="w-full md:w-2/3 text-2xl md:text-5xl text-center font-libre leading-tight md:leading-snug">
+            <h2 class="w-full md:w-2/3 text-2xl md:text-5xl text-center font-libre leading-tight md:leading-snug title">
                 Mais do que personalizar produtos, criamos experiências físicas que traduzem o valor da sua marca em
                 cada detalhe.
             </h2>
@@ -458,6 +458,11 @@
     </section>
 </body>
 
-<script src="index.js"></script>
+<script src="../node_modules/gsap/dist/gsap.min.js"></script>
+<script src="../node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+<script src="../node_modules/gsap/dist/ScrollSmoother.js"></script>
+
+<script src="index.js" defer></script>
+<script src="animations.js" defer></script>
 
 </html>
