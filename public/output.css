@@ -198,17 +198,6 @@
   }
 }
 @layer utilities {
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
-    border-width: 0;
-  }
   .absolute {
     position: absolute;
   }
@@ -257,9 +246,6 @@
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
   }
-  .ms-5 {
-    margin-inline-start: calc(var(--spacing) * 5);
-  }
   .me-2 {
     margin-inline-end: calc(var(--spacing) * 2);
   }
@@ -295,9 +281,6 @@
   }
   .hidden {
     display: none;
-  }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
@@ -346,9 +329,6 @@
   }
   .w-4\/5 {
     width: calc(4/5 * 100%);
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-36 {
     width: calc(var(--spacing) * 36);
@@ -823,11 +803,6 @@
       margin-inline: auto;
     }
   }
-  .sm\:mt-0 {
-    @media (width >= 40rem) {
-      margin-top: calc(var(--spacing) * 0);
-    }
-  }
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
@@ -846,11 +821,6 @@
   .sm\:justify-between {
     @media (width >= 40rem) {
       justify-content: space-between;
-    }
-  }
-  .sm\:justify-center {
-    @media (width >= 40rem) {
-      justify-content: center;
     }
   }
   .sm\:gap-6 {
