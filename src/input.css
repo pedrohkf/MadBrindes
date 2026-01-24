@@ -51,6 +51,13 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
+.title {
+  color: #653332;
+  background-image: linear-gradient(to right, #473734 50%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

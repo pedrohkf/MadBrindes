@@ -883,11 +883,6 @@
       height: calc(var(--spacing) * 180);
     }
   }
-  .md\:h-245 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 245);
-    }
-  }
   .md\:h-auto {
     @media (width >= 48rem) {
       height: auto;
@@ -1213,8 +1208,14 @@
     }
   }
 }
-html {
-  scroll-behavior: smooth;
+.title {
+  color: #653332;
+  background-image: linear-gradient(to right, #473734 50%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @property --tw-translate-x {
   syntax: "*";
