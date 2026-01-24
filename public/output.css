@@ -44,6 +44,7 @@
     --color-brown: #473734;
     --color-button: #653332;
     --color-light: #F7F3EB;
+    --color-medium: #CAC3BB;
     --color-creme-dark: #E0D9D1;
     --font-montserrat: "Montserrat", sans-serif;
     --font-libre: "Libre", sans-serif;
@@ -724,6 +725,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-light) 80%, transparent);
     }
+  }
+  .text-medium {
+    color: var(--color-medium);
   }
   .text-primary {
     color: var(--color-primary);

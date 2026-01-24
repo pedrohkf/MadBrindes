@@ -34,13 +34,12 @@ gsap.to(title, {
   },
 });
 
-gsap.from("#sobre .flex-col.flex-1", {
+gsap.from("#sobre", {
   x: -50,
-  opacity: 0,
   duration: 1.2,
   ease: "power3.out",
   scrollTrigger: {
-    trigger: "#sobre",
+    trigger: "main",
     start: "top 70%", 
   }
 });
@@ -54,7 +53,18 @@ gsap.from("#sobre img", {
   scrollTrigger: {
     trigger: "#sobre",
     start: "top 40%",
+    scrub: true,
   }
+});
+
+const smoother = ScrollSmoother.get();
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    smoother.scrollTo(link.getAttribute("href"), true);
+    console.log(link)
+  });
 });
 
 gsap.from("#seguranca .group", {
@@ -62,7 +72,7 @@ gsap.from("#seguranca .group", {
   opacity: 0,
   duration: 1,
   stagger: 0.3,
-  ease: "power3.out",
+  ease: "none",
   scrollTrigger: {
     trigger: "#seguranca",
     start: "top 80%", 

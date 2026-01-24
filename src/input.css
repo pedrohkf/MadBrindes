@@ -52,8 +52,9 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Enables smooth scrolling for all anchor links */
 }
+
 
 .title {
   color: #653332;
