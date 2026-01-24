@@ -4,7 +4,7 @@ const title = document.querySelector('.title');
 
 ScrollSmoother.create({
     smooth: 2,
-    smoothTouch: 0.2,
+    smoothTouch: 1,
     effects: true
 })
 
