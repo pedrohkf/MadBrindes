@@ -58,6 +58,6 @@ form.addEventListener('submit', function (e) {
 
     const textCode = encodeURIComponent(textWhatsapp);
 
-    const urlWhatsapp = `https://wa.me/11915112012?text=${textCode}`;
+    const urlWhatsapp = `https://wa.me/5511915112012?text=${textCode}`;
     window.open(urlWhatsapp, "_blank");
 });
